@@ -1,0 +1,15 @@
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\bin\Debug\net8.0\P0.exe
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\bin\Debug\net8.0\P0.deps.json
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\bin\Debug\net8.0\P0.runtimeconfig.json
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\bin\Debug\net8.0\P0.dll
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\bin\Debug\net8.0\P0.pdb
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.AssemblyInfoInputs.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.AssemblyInfo.cs
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.csproj.CoreCompileInputs.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.sourcelink.json
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.dll
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\refint\P0.dll
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.pdb
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\P0.genruntimeconfig.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\obj\Debug\net8.0\ref\P0.dll
