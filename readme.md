@@ -1,3 +1,5 @@
-This is a sample readme.
+Revature Training for 240401-NET+AI
 
-More samples.
+Repository that belongs Kung Lo
+
+This repo will hold all relevent info and projects.

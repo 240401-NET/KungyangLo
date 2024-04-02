@@ -1,0 +1,15 @@
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\bin\Debug\net8.0\dndRPGdemo.exe
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\bin\Debug\net8.0\dndRPGdemo.deps.json
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\bin\Debug\net8.0\dndRPGdemo.runtimeconfig.json
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\bin\Debug\net8.0\dndRPGdemo.dll
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\bin\Debug\net8.0\dndRPGdemo.pdb
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.AssemblyInfoInputs.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.AssemblyInfo.cs
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.csproj.CoreCompileInputs.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.sourcelink.json
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.dll
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\refint\dndRPGdemo.dll
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.pdb
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\dndRPGdemo.genruntimeconfig.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\dndRPGdemo\obj\Debug\net8.0\ref\dndRPGdemo.dll
