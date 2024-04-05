@@ -3,7 +3,7 @@ using System.Diagnostics;
 namespace P0;
 
 //Utils.cs contains all utilities that may be needed for this application
-public class Utils
+public class Utils  
 {
     public static void waitSec(int sec)
     {
@@ -15,6 +15,45 @@ public class Utils
         {
             numOfSec = stopwatch.ElapsedTicks / Stopwatch.Frequency;
         }
+    }
+
+    public static int UserChoice(String? userSelection)
+    {
+        try
+        {
+            return Convert.ToInt32(userSelection);
+        } catch(Exception)
+        {
+            Console.WriteLine("The selection you made did was invalid. Try again!");
+            Menu.DisplayLineBreak(1);
+            return -1;
+        }
+    }
+
+    public static int CalculateAge(DateOnly birthday)
+    {      
+        DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+
+        if(birthday.DayNumber > today.DayNumber) return -1;
+
+        int age = today.Year - birthday.Year;
+
+        if(today.Month < birthday.Month || (today.Month == birthday.Month && today.Day < birthday.Day))
+        {
+            age--;
+        }
+
+        return age;
+    }
+
+    public static void SaveAllPets()
+    {
+
+    }
+
+    public static List<Animal> LoadAllPets()
+    {
+        return [];
     }
 }
 
