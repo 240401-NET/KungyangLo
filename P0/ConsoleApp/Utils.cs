@@ -27,7 +27,7 @@ public class Utils
         } catch(Exception)
         {
             Console.WriteLine("The selection you made did was invalid. Try again!");
-            Menu.DisplayLineBreak(1);
+            Menu.DisplayLineBreak(Console.Out, 1);
             return -1;
         }
     }
@@ -69,5 +69,10 @@ public class Utils
     public static bool FindPet(string petName, List<Animal> petList)
     {
         return petList.Exists(pet => pet.Name.Equals(petName, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public static void Output(TextWriter outputWriter, string output)
+    {
+        outputWriter.Write(output);
     }
 }

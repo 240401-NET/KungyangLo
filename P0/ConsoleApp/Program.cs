@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Security.Cryptography;
-using static System.Console;
+using System.Text;
+//using static System.Console;
 
 namespace P0;
 
@@ -11,15 +12,15 @@ class Program
         List<Animal> petsList = Data.LoadAllPets();
 
         Menu.DisplayBanner();       
-        Menu.DisplayLineBreak(3);
+        Menu.DisplayLineBreak(Console.Out, 2);
 
         while(true)
         {
             Menu.DisplayMenuOptions();
-            Menu.DisplayLineBreak(1);
+            Menu.DisplayLineBreak(Console.Out, 1);
 
-            int userSelection = Utils.UserChoice(ReadLine());
-            Menu.DisplayLineBreak(1);
+            int userSelection = Utils.UserChoice(Console.ReadLine());
+            Menu.DisplayLineBreak(Console.Out, 1);
 
             //Clear();
 
@@ -27,17 +28,17 @@ class Program
             {
                 case 1:
                 petsList.Add(Controller.CreateNewPet());
-                Menu.DisplayLineBreak(1);
+                Menu.DisplayLineBreak(Console.Out, 1);
                 break;
 
                 case 2:
                 Controller.DeletePet(ref petsList);
-                Menu.DisplayLineBreak(1);
+                Menu.DisplayLineBreak(Console.Out, 1);
                 break;
 
                 case 3:
                 Controller.ListAllPets(petsList);
-                Menu.DisplayLineBreak(1);
+                Menu.DisplayLineBreak(Console.Out, 1);
                 break;
 
                 case 0:

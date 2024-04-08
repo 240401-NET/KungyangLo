@@ -31,8 +31,12 @@ public class Controller
             }
             else
             {
-                WriteLine("The date you entered either has bad format or does not exist.");
+                WriteLine("That date does not exist.");
             }
+        }
+        else
+        {
+            WriteLine("That input did not follow the date (MM/DD/YYYY) format.");
         }
         return newPet;     
     }

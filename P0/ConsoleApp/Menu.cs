@@ -7,9 +7,7 @@ public class Menu
 {
     public static void DisplayBanner()
     {
-        DisplayLineBreak(1);
-        Console.WriteLine
-        (
+        WriteLine(
             " _____     _     _______             _                \n" +        
             "|  __ \\   | |   |__   __|           | |              \n" +
             "| |__) |__| |_     | |_ __ __ _  ___| | _____ _ __    \n" +
@@ -18,22 +16,22 @@ public class Menu
             "|_|   \\___|\\__|    |_|_|  \\__,_|\\___|_|\\_\\___|_|  "                                  
         );
         
-        Console.WriteLine("Hello, welcome to Pet Tracker!");
+        WriteLine("Hello, welcome to Pet Tracker!");
     }
 
     public static void DisplayMenuOptions()
     {
-        Console.WriteLine("1. Enter new pet.");
-        Console.WriteLine("2. Delete existing pet.");
-        Console.WriteLine("3. List all pets.");
-        Console.WriteLine("0. Save and exit.");
+        WriteLine("1. Enter new pet.");
+        WriteLine("2. Delete existing pet.");
+        WriteLine("3. List all pets.");
+        WriteLine("0. Save and exit.");
     }
 
-    public static void DisplayLineBreak(int numOfBreak)
+    public static void DisplayLineBreak(TextWriter textWriter, int numOfBreak)
     {
         for(int i = 0; i < numOfBreak; i++)
         {
-            Console.Write("\n");
+            Utils.Output(textWriter, "\n");
         }
     }
 }
