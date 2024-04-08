@@ -1,5 +1,6 @@
 namespace P0;
 
+//Animal class that creates object that represents pets that may be added to the app
 public class Animal
 {
     private string name = "";
@@ -46,7 +47,10 @@ public class Animal
 
     public override string ToString()
     {
-        string animalInfo = $"Name: {name}\nType: {animalType}\nBirthday: {birthday}";
+        bool hasBirthDay = birthday.Equals(DateOnly.MinValue);        
+        string birthdayString = hasBirthDay ? "Birthday: No bDay (-_-)'" : $"Birthday: {birthday.ToString()}";
+        string petAge = hasBirthDay ? "" : $"\nAge: {PetAge()}";        
+        string animalInfo = $"Name: {name}\nType: {animalType}\n{birthdayString}{petAge}";
         return animalInfo;
     }
 }

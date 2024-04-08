@@ -23,8 +23,17 @@ public class Controller
 
         WriteLine($"Does {petName} have a birthday? MM/DD/YYYY Or leave blank.");
         string? petBirthDay = ReadLine();
-        //newPet.BirthDay = ;
-
+        if(Utils.DateCorrectFormat(petBirthDay!))
+        {
+            if (Utils.DateExists(petBirthDay!, out DateOnly properDate))
+            {
+                newPet.BirthDay = properDate;
+            }
+            else
+            {
+                WriteLine("The date you entered either has bad format or does not exist.");
+            }
+        }
         return newPet;     
     }
 
@@ -47,6 +56,12 @@ public class Controller
 
     public static void ListAllPets(List<Animal> petList)
     {
+        if(!petList.Any())
+        {
+            WriteLine("There are no pets in the list.\n");
+            return;
+        }
+        
         foreach(Animal pet in petList)
         {
             WriteLine(pet);
@@ -56,6 +71,6 @@ public class Controller
 
     public static List<Animal> EditPet(List<Animal> petList, Animal petToEdit)
     {
-        return petList;
+        throw new NotImplementedException();
     } 
 }

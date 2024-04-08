@@ -21,12 +21,11 @@ public class Data
         {
             string jsonPets = File.ReadAllText(saveFilePath);            
             petList = JsonSerializer.Deserialize<List<Animal>>(jsonPets) ?? [];
-        }catch(Exception e)
+        }catch(Exception)
         {
-            WriteLine(e);
             WriteLine("Pets save file does not exist or is corrupted.");
             WriteLine("Generating new pets save file.");
-            //SaveAllPets(petList);
+            SaveAllPets(petList);
         }
         
         return petList;
