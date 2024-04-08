@@ -1,0 +1,2 @@
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp\bin\Release\net8.0\win-x64\publish\P0.pdb
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp\bin\Release\net8.0\win-x64\publish\P0.exe

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FIkygsSl4VD8YO7CAIUqMKz2H3gf61710uWO9OLnXVAbzHMmB6qoVjGqfH5Rx3msAY9Jrwhgw+4vf4ekwRRcMw==",
+  "dgSpecHash": "x0ukqB5oaD3JK0HfPwb+sJDfT7iMVv6FVlYGmPzfcU2CoBVqhDAKqQfPP2OT2TwNpad1uHIBBOhIhoNnz5ulaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kung\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

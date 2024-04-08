@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics;
+using System.Security.Cryptography;
+using static System.Console;
 
 namespace P0;
 
@@ -6,51 +8,40 @@ class Program
 {
     static void Main(string[] args)
     {        
+        List<Animal> petsList = Data.LoadAllPets();
+
         Menu.DisplayBanner();       
-        Menu.DisplayLineBreak(3);
-
-        Animal myPet1 = new("Nyla");
-        Animal myPet2 = new("Steve");
-        Animal myPet3 = new("Dave");
-
-        myPet1.AnimalType = "Cat";
-        myPet1.BirthDay = new(2012, 10, 14);
-
-        List<Animal> animalList = [myPet1, myPet2, myPet3];
-
-        DateOnly bDay = DateOnly.MinValue;
-        Console.WriteLine(bDay);
-        Console.WriteLine(Utils.CalculateAge(bDay));
         Menu.DisplayLineBreak(3);
 
         while(true)
         {
             Menu.DisplayMenuOptions();
-            Menu.DisplayLineBreak(3);
+            Menu.DisplayLineBreak(1);
 
-            int userSelection = Utils.UserChoice(Console.ReadLine());
+            int userSelection = Utils.UserChoice(ReadLine());
+            Menu.DisplayLineBreak(1);
 
-            //Console.Clear();
+            //Clear();
 
             switch(userSelection)
             {
                 case 1:
-                Console.WriteLine(Menu.CreateNewPet());
+                petsList.Add(Controller.CreateNewPet());
+                Menu.DisplayLineBreak(1);
                 break;
 
                 case 2:
-                Console.WriteLine("Choice 2");
+                Controller.DeletePet(ref petsList);
+                Menu.DisplayLineBreak(1);
                 break;
 
                 case 3:
-                foreach(Animal pet in animalList)
-                {
-                    Console.WriteLine(pet);
-                }
+                Controller.ListAllPets(petsList);
+                Menu.DisplayLineBreak(1);
                 break;
 
                 case 0:
-                Console.WriteLine("Choice 0");
+                Data.SaveAllPets(petsList);
                 Environment.Exit(0);
                 break;
 

@@ -1,12 +1,20 @@
 namespace P0;
 
-public class Animal(string name, string animalType = "TBD", DateOnly? birthday = null, string description = "TBD")
+public class Animal
 {
-    private string name = name;
-    private string animalType = animalType;
-    private DateOnly birthday = birthday ?? DateOnly.MinValue;
-    private string description = description;
+    private string name = "";
+    private string animalType = "";
+    private DateOnly birthday = DateOnly.MinValue;
 
+    public Animal(){}
+
+    public Animal(string name, string animalType = "TBD", DateOnly? birthday = null)
+    {
+        this.name = name;
+        this.animalType = animalType;
+        this.birthday = birthday ?? DateOnly.MinValue;
+    }
+    
     public string Name
     {
         get => name;
@@ -16,7 +24,13 @@ public class Animal(string name, string animalType = "TBD", DateOnly? birthday =
     public string AnimalType
     {
         get => animalType;
-        set => animalType = value;
+        set
+        {
+            if(!String.IsNullOrEmpty(value?.Trim()))
+            {
+                animalType = value.Trim();
+            }
+        }
     }
 
     public DateOnly BirthDay
@@ -25,21 +39,14 @@ public class Animal(string name, string animalType = "TBD", DateOnly? birthday =
         set => birthday = value;
     }
 
-    public string Description
-    {
-        get => description;
-        set => description = value;
-    }
-
     public int PetAge()
     {
-        DateOnly today = DateOnly.FromDateTime(DateTime.Now);
-        return 0;
+        return Utils.CalculateAge(this.birthday);
     }
 
     public override string ToString()
     {
-        string animalInfo = $"Name: {name}\nType: {animalType}\nBirthday: {birthday}\nDescription: {description}";
+        string animalInfo = $"Name: {name}\nType: {animalType}\nBirthday: {birthday}";
         return animalInfo;
     }
 }

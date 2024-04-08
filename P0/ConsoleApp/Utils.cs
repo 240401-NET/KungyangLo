@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace P0;
 
@@ -45,63 +47,27 @@ public class Utils
 
         return age;
     }
+    
+    public static bool DateExists(string dateString, out DateOnly properDate)
+    {        
+        if(DateTime.TryParseExact(dateString, "M/d/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime formattedDate))
+        {
+            properDate = DateOnly.FromDateTime(formattedDate);
+            return true;
+        }
 
-    public static void SaveAllPets()
-    {
-
+        properDate = DateOnly.MinValue;
+        return false;
     }
 
-    public static List<Animal> LoadAllPets()
+    public static bool DateCorrectFormat(string dateString)
     {
-        return [];
+        Regex datePattern = new("^(1[0-2]|0?[1-9])/(3[01]|[12][0-9]|0?[1-9])/([0-9]{4})$");        
+        return datePattern.IsMatch(dateString);
+    }
+
+    public static bool FindPet(string petName, List<Animal> petList)
+    {
+        return petList.Exists(pet => pet.Name.Equals(petName, StringComparison.OrdinalIgnoreCase));
     }
 }
-
-/*
-        //Possible functions I was playing with
-        
-        Random rnd = new();
-
-        int price = rnd.Next(10);
-        Console.WriteLine($"Random number is: {price}");
-
-        for(int i = 0; i < 10; i++)
-        {
-            Console.WriteLine(rnd.Next(10));
-        }
-
-        Console.WriteLine(Console.BackgroundColor);
-        Console.WriteLine(Console.ForegroundColor);
-
-        waitSec(1);
-
-        Console.BackgroundColor = ConsoleColor.DarkGreen;
-        Console.Clear();
-
-        waitSec(1);
-
-        Console.BackgroundColor = ConsoleColor.Black;
-        Console.Clear();
-
-        waitSec(1);
-
-        Console.BackgroundColor = ConsoleColor.White;
-        Console.Clear();
-
-        waitSec(1);
-
-        Console.BackgroundColor = ConsoleColor.Red;
-        Console.Clear();
-
-        while(true)
-        {
-            ConsoleKeyInfo keyPress = Console.ReadKey(true);
-
-            if(keyPress.Key is ConsoleKey.Escape)
-            {
-                Console.Clear();
-            }
-
-            Console.WriteLine(keyPress.Key);
-        }
-    */
