@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj": {}
+    "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj": {
+    "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj",
         "projectName": "PetsAPI",
-        "projectPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj",
+        "projectPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\PetsAPI.csproj",
         "packagesPath": "C:\\Users\\Kung\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\obj\\",
+        "outputPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P1\\Project1_PetsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kung\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,6 +50,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.4, )"
             },

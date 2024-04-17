@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("67dbccbf-0fd8-4c49-836a-8a66eba5ef75")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3feec1303dcaf1d6c961c041ff9db1da5e8fd47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f945175ce65fece46c2933b64569da72d6aca99")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

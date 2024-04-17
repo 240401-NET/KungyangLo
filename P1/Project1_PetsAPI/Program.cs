@@ -1,14 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using Project1_PetsAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddDbContext<PetsAPIContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PetDB_Local")));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName.Equals("DevLocal"))
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -35,6 +41,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+Console.WriteLine($"The environment is: {app.Environment.EnvironmentName}");
 
 app.Run();
 
