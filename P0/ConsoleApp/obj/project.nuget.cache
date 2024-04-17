@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o78qx/70tnuLvmcc4xvVnGhbV5GA5GFGkj2u20wtjT86v6iqAu/N0owkVEY78QoIjfLyVzXkyailO/2+BX9wpQ==",
+  "dgSpecHash": "hdgkSvqx/b3FKTn71tvhLZVQtg55PZiguo+6Iad6gUEpy4/DGxtyBSKaNgTnPk7UcCfAEvmwO7lJR4yycjeE/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
+  "projectFilePath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kung\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
-    "C:\\Users\\Kung\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.3\\microsoft.netcore.app.runtime.win-x64.8.0.3.nupkg.sha512",
-    "C:\\Users\\Kung\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.3.nupkg.sha512",
-    "C:\\Users\\Kung\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.3\\microsoft.aspnetcore.app.runtime.win-x64.8.0.3.nupkg.sha512"
+    "C:\\Users\\Kung\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512"
   ],
   "logs": []
 }

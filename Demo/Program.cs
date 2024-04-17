@@ -13,39 +13,39 @@ builder.Services.AddSwaggerGen();
 //Select all tools
 DemoDbContext context = new DemoDbContext();
 
-IEnumerable<Tool> tools = context.Tools.ToList();
+// IEnumerable<Tool> tools = context.Tools.ToList();
 
-foreach(Tool tool in tools)
-{
-    Console.WriteLine(tool);
-}
+// foreach(Tool tool in tools)
+// {
+//     Console.WriteLine(tool);
+// }
 
 //stored procedure getBudgetTool
-var tools_ = context.Tools
-    .FromSql($"EXECUTE dbo.getBudgetTool")
-    .ToList();
+// var tools_ = context.Tools
+//     .FromSql($"EXECUTE dbo.getBudgetTool")
+//     .ToList();
 
-foreach(Tool tool in tools_)
-{
-    Console.WriteLine(tool);
-}
+// foreach(Tool tool in tools_)
+// {
+//     Console.WriteLine(tool);
+// }
 
 //stored procedure getToolsUnderPrice
-var tools_2 = context.Tools
-    .FromSql($"EXECUTE dbo.getToolsUnderPrice {150}")
-    .ToList();
+// var tools_2 = context.Tools
+//     .FromSql($"EXECUTE dbo.getToolsUnderPrice {300}")
+//     .ToList();
 
-foreach(Tool tool in tools_2)
-{
-    Console.WriteLine(tool);
-}
+// foreach(Tool tool in tools_2)
+// {
+//     Console.WriteLine(tool);
+// }
 
 //stored procedure getToolsBetweenPrice with multiple parameters
 var highPrice = new SqlParameter("highPrice", 80);
 var lowPrice = new SqlParameter("lowPrice", 50);
 
 var tools_3 = context.Tools
-    .FromSql($"EXECUTE dbo.getToolsBetweenPrice {lowPrice}, {highPrice}")
+    .FromSql($"EXECUTE dbo.getToolsBetweenPrice @lowPrice = {lowPrice}, @highPrice = {highPrice}")
     .ToList();
 
 foreach(Tool tool in tools_3)

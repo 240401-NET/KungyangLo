@@ -5529,11 +5529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp.tests\\ConsoleApp.tests.csproj",
+      "projectUniqueName": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp.tests\\ConsoleApp.tests.csproj",
       "projectName": "ConsoleApp.tests",
-      "projectPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp.tests\\ConsoleApp.tests.csproj",
+      "projectPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp.tests\\ConsoleApp.tests.csproj",
       "packagesPath": "C:\\Users\\Kung\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp.tests\\obj\\",
+      "outputPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp.tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kung\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5548,8 +5548,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj": {
-              "projectPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj"
+            "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj": {
+              "projectPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj"
             }
           }
         }

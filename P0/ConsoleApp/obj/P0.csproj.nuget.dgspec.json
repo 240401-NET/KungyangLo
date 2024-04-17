@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj": {}
+    "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj": {
+    "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
+        "projectUniqueName": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
         "projectName": "P0",
-        "projectPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
+        "projectPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\P0.csproj",
         "packagesPath": "C:\\Users\\Kung\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\obj\\",
+        "outputPath": "c:\\Users\\Kung\\Desktop\\Revature\\240401-NET+AI\\gitPractice\\KungyangLo\\P0\\ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kung\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -61,31 +61,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.3, 8.0.3]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.3, 8.0.3]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.3, 8.0.3]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

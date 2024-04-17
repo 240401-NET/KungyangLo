@@ -1,10 +1,4 @@
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\CoverletSourceRootsMapping_ConsoleApp.tests
-C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.csproj.AssemblyReference.cache
-C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.AssemblyInfoInputs.cache
-C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.AssemblyInfo.cs
-C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.csproj.CoreCompileInputs.cache
-C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.sourcelink.json
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\testhost.dll
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\P0.deps.json
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\P0.runtimeconfig.json
@@ -98,6 +92,12 @@ C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleAp
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\P0.dll
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\bin\Debug\net8.0\P0.pdb
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.csproj.AssemblyReference.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.AssemblyInfoInputs.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.AssemblyInfo.cs
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.csproj.CoreCompileInputs.cache
+C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.sourcelink.json
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleA.AAEA7476.Up2Date
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\ConsoleApp.tests.dll
 C:\Users\Kung\Desktop\Revature\240401-NET+AI\gitPractice\KungyangLo\P0\ConsoleApp.tests\obj\Debug\net8.0\refint\ConsoleApp.tests.dll
