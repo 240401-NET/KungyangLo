@@ -17,6 +17,13 @@ public partial class DemoDbContext : DbContext
 
     public virtual DbSet<Tool> Tools { get; set; }
 
+<<<<<<< HEAD
+=======
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=tcp:kungloprojects.database.windows.net,1433;Initial Catalog=demoDB;Persist Security Info=False;User ID=project-admin;Password=abc;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+>>>>>>> 13da86fadfd6df864bd29d9af6ea372a77afcd75
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Tool>(entity =>
