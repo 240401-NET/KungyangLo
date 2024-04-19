@@ -15,18 +15,22 @@ public class PetsController : ControllerBase
     
     //Get
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult GetAllPets()
     {        
         return Ok(petService.GetAllPets());
     }
 
     [HttpGet("name/{name}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult GetPetsByName(string name)
     {
         return Ok(petService.GetPetsByName(name));
     }
 
     [HttpGet("id/{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult GetPetById(int id)
     {
         var foundPet = petService.GetPetById(id);
@@ -37,6 +41,8 @@ public class PetsController : ControllerBase
     
     //Post
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult CreateNewPet(Pet newPet)
     {
         var createdPet = petService.CreateNewPet(newPet);
@@ -47,6 +53,8 @@ public class PetsController : ControllerBase
     
     //Put
     [HttpPut]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult UpdatePetById(int id, Pet newPet)
     {
         var updatedPet = petService.UpdatePetById(id, newPet);
@@ -57,6 +65,8 @@ public class PetsController : ControllerBase
 
     //Patch
     [HttpPatch]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult EditPetById(int id, JsonPatchDocument<Pet> newPet)
     {
         var updatedPet = petService.EditPetById(id, newPet);
@@ -67,6 +77,8 @@ public class PetsController : ControllerBase
     
     //Delete
     [HttpDelete]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult DeletePetById(int id)
     {
         var deletePet = petService.DeletePetById(id);

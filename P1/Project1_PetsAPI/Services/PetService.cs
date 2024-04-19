@@ -56,6 +56,13 @@ public class PetService : IPetService
 
     public Pet? DeletePetById(int id)
     {
-        return petDAO.DeletePetById(id);
+        var deletePet = GetPetById(id);
+
+        if(deletePet is not null) 
+        {
+            return petDAO.DeletePetById(id);
+        }
+        
+        return null;        
     }    
 }

@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddDbContext<PetsDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PetDB_Local")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PetDB")));
 
 builder.Services.AddScoped<IPetDAO, PetDAO>();
 builder.Services.AddScoped<IPetService, PetService>();
@@ -34,6 +34,30 @@ if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName.Equals("D
 
 app.UseHttpsRedirection();
 
+Console.WriteLine($"The environment is: {app.Environment.EnvironmentName}");
+app.MapControllers();
+app.Run();
+
+record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+{
+    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -53,12 +77,4 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
-
-Console.WriteLine($"The environment is: {app.Environment.EnvironmentName}");
-app.MapControllers();
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+*/

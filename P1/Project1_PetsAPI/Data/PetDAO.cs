@@ -51,14 +51,9 @@ public class PetDAO : IPetDAO
 
     public Pet? DeletePetById(int id)
     {
-        var petToDelete = GetPetById(id);
-
-        if(petToDelete is not null)
-        {
-            context.Pets.Remove(petToDelete);
-            context.SaveChanges();
-        }
-
+        Pet petToDelete = GetPetById(id)!;
+        context.Pets.Remove(petToDelete);
+        context.SaveChanges();
         return petToDelete;     
     }    
 }

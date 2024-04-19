@@ -22,7 +22,7 @@ public class Pet
     [MaxLength(280)]
     public string? Description { get; set; }
 
-    public IEnumerable<Owner>? OwnerIds { get; set;} = [];
+    //public IEnumerable<Owner>? OwnerIds { get; set;} = [];
 
     public override string ToString()
     {

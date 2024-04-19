@@ -185,4 +185,104 @@ public class PetServiceTest
         DAOMock.Verify(repo => repo.UpdatePetById(id, newPet), Times.Exactly(1));        
     }
 
+    [Fact]
+    public void PetServiceUpdatePetByIdPetNotFound()
+    {
+        // Arrange
+        Mock<IPetDAO> DAOMock = new();
+
+        List<Pet> fakePets = [
+            new Pet{Id = 1, Name = "Steve"},
+            new Pet{Id = 2, Name = "Bob"},
+            new Pet{Id = 3, Name = "Doodle"}
+        ];
+
+        int id = 4;
+        Pet newPet = new();
+        newPet.Name = "Goofball";         
+    
+        DAOMock.Setup(repo => repo.GetPetById(id)).Returns(fakePets.FirstOrDefault(p => p.Id == id)!);
+        PetService service = new PetService(DAOMock.Object);
+
+        //Act
+        Pet updatedPet = service.UpdatePetById(id, newPet);
+        
+        //Assert
+        // Check to verify we actually got the data we faked
+        //Assert.NotNull(updatedPet);
+        Assert.Null(updatedPet);
+        // Also check that GetAllPets of PetRepository was called Only Once
+        DAOMock.Verify(repo => repo.GetPetById(id), Times.Exactly(1));
+        DAOMock.Verify(repo => repo.UpdatePetById(id, newPet), Times.Exactly(0));        
+    }
+
+    [Theory]
+    [InlineData(1)]
+    [InlineData(2)]
+    [InlineData(3)]
+    public void PetServiceDeletePetByIdSuccessful(int id)
+    {
+        // Arrange
+        Mock<IPetDAO> DAOMock = new();
+
+        List<Pet> fakePets = [
+            new Pet{Id = 1, Name = "Steve"},
+            new Pet{Id = 2, Name = "Bob"},
+            new Pet{Id = 3, Name = "Doodle"}
+        ];
+
+        Pet deletePet = fakePets.FirstOrDefault(p => p.Id == id)!;      
+    
+        DAOMock.Setup(repo => repo.GetPetById(id)).Returns(fakePets.FirstOrDefault(p => p.Id == id)!);
+        DAOMock.Setup(repo => repo.DeletePetById(id))
+            .Callback(() => fakePets.Remove(deletePet))
+            .Returns(deletePet);
+        PetService service = new PetService(DAOMock.Object);
+
+        //Act
+        Pet updatedPet = service.DeletePetById(id)!;
+        
+        //Assert
+        // Check to verify we actually got the data we faked
+        //Assert.NotNull(updatedPet);
+        Assert.Equal(deletePet, updatedPet);
+        Assert.DoesNotContain(deletePet, fakePets);
+        // Also check that GetAllPets of PetRepository was called Only Once
+        DAOMock.Verify(repo => repo.GetPetById(id), Times.Exactly(1));
+        DAOMock.Verify(repo => repo.DeletePetById(id), Times.Exactly(1));        
+    }
+
+    [Fact]
+    public void PetServiceDeletePetByIdFail()
+    {
+        // Arrange
+        Mock<IPetDAO> DAOMock = new();
+
+        List<Pet> fakePets = [
+            new Pet{Id = 1, Name = "Steve"},
+            new Pet{Id = 2, Name = "Bob"},
+            new Pet{Id = 3, Name = "Doodle"}
+        ];
+
+        int id = 33;    
+    
+        DAOMock.Setup(repo => repo.GetPetById(id)).Returns(fakePets.FirstOrDefault(p => p.Id == id)!);
+        PetService service = new PetService(DAOMock.Object);
+
+        //Act
+        Pet updatedPet = service.DeletePetById(id)!;
+        
+        //Assert
+        // Check to verify we actually got the data we faked
+        //Assert.NotNull(updatedPet);
+        Assert.Null(updatedPet);
+        // Also check that GetAllPets of PetRepository was called Only Once
+        DAOMock.Verify(repo => repo.GetPetById(id), Times.Exactly(1));
+        DAOMock.Verify(repo => repo.DeletePetById(id), Times.Exactly(0)); 
+    }
+
 }
+
+/*
+reportgenerator -reports:".\TestResults\4a9a7a7a-ac19-4f8a-8412-6ae45e1f62f1\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html -classfilters:"-Project1_PetsAPI.Data.*;-Program;-WeatherForecast;-PetsAPI.Migrations.*;-Project1_PetsAPI.Models.Owner"
+*/

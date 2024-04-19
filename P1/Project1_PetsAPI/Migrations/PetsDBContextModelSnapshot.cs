@@ -22,44 +22,6 @@ namespace PetsAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("OwnerPet", b =>
-                {
-                    b.Property<int>("OwnerIdsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PetIdsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OwnerIdsId", "PetIdsId");
-
-                    b.HasIndex("PetIdsId");
-
-                    b.ToTable("OwnerPet");
-                });
-
-            modelBuilder.Entity("Project1_PetsAPI.Models.Owner", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("BirthDay")
-                        .HasColumnType("date");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Owners");
-                });
-
             modelBuilder.Entity("Project1_PetsAPI.Models.Pet", b =>
                 {
                     b.Property<int>("Id")
@@ -87,21 +49,6 @@ namespace PetsAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Pets");
-                });
-
-            modelBuilder.Entity("OwnerPet", b =>
-                {
-                    b.HasOne("Project1_PetsAPI.Models.Owner", null)
-                        .WithMany()
-                        .HasForeignKey("OwnerIdsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Project1_PetsAPI.Models.Pet", null)
-                        .WithMany()
-                        .HasForeignKey("PetIdsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
