@@ -221,8 +221,9 @@ var assemblies = [
   {
     "name": "PetsAPI",
     "classes": [
-      { "name": "Project1_PetsAPI.Controllers.PetsController", "rp": "PetsAPI_PetsController.html", "cl": 0, "ucl": 32, "cal": 32, "tl": 77, "cb": 0, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "Project1_PetsAPI.Models.Pet", "rp": "PetsAPI_Pet.html", "cl": 3, "ucl": 6, "cal": 9, "tl": 31, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Project1_PetsAPI.Controllers.FactsController", "rp": "PetsAPI_FactsController.html", "cl": 0, "ucl": 14, "cal": 14, "tl": 37, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Project1_PetsAPI.Controllers.PetsController", "rp": "PetsAPI_PetsController.html", "cl": 0, "ucl": 32, "cal": 32, "tl": 124, "cb": 0, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Project1_PetsAPI.Models.Pet", "rp": "PetsAPI_Pet.html", "cl": 2, "ucl": 6, "cal": 8, "tl": 31, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "Project1_PetsAPI.Services.PetService", "rp": "PetsAPI_PetService.html", "cl": 27, "ucl": 7, "cal": 34, "tl": 68, "cb": 4, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];

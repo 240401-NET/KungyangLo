@@ -13,7 +13,14 @@ public class PetsController : ControllerBase
     private readonly IPetService petService;
     public PetsController(IPetService petService) => this.petService = petService;
     
-    //Get
+
+    /// <summary>
+    /// Returns all the pets in the database.
+    /// </summary>
+    /// <returns></returns> <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult GetAllPets()
@@ -21,6 +28,11 @@ public class PetsController : ControllerBase
         return Ok(petService.GetAllPets());
     }
 
+    /// <summary>
+    /// Returns a list of pets matching {name}.
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
     [HttpGet("name/{name}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult GetPetsByName(string name)
@@ -28,6 +40,11 @@ public class PetsController : ControllerBase
         return Ok(petService.GetPetsByName(name));
     }
 
+    /// <summary>
+    /// Returns a pet matching the {id}.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpGet("id/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -39,7 +56,11 @@ public class PetsController : ControllerBase
         return Ok(foundPet);
     }
     
-    //Post
+    /// <summary>
+    /// Creates a pet and stores it in the database.
+    /// </summary>
+    /// <param name="newPet"></param>
+    /// <returns></returns>
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -51,7 +72,12 @@ public class PetsController : ControllerBase
         return Ok(createdPet);
     }
     
-    //Put
+    /// <summary>
+    /// Replaces all attibutes of a pet matching {id} with the specified {pet}. 
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="newPet"></param>
+    /// <returns></returns>
     [HttpPut]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -63,7 +89,12 @@ public class PetsController : ControllerBase
         return Ok(updatedPet);
     }
 
-    //Patch
+    /// <summary>
+    /// Edits specific attributes of a pet matching {id} using a JSONPatchDocument.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="newPet"></param>
+    /// <returns></returns>
     [HttpPatch]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -75,7 +106,11 @@ public class PetsController : ControllerBase
         return Ok(updatedPet);
     }
     
-    //Delete
+    /// <summary>
+    /// Deletes a pet from the database matching {id}.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpDelete]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

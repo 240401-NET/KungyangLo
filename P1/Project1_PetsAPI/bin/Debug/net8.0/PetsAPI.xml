@@ -4,6 +4,66 @@
         <name>PetsAPI</name>
     </assembly>
     <members>
+        <member name="M:Project1_PetsAPI.Controllers.FactsController.GetAnimalFact">
+            <summary>
+            Returns a random cat fact!
+            *Terms and conditions apply. Offer valid for a limited time only.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.GetAllPets">
+            <summary>
+            Returns all the pets in the database.
+            </summary>
+            <returns></returns> <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.GetPetsByName(System.String)">
+            <summary>
+            Returns a list of pets matching {name}.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.GetPetById(System.Int32)">
+            <summary>
+            Returns a pet matching the {id}.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.CreateNewPet(Project1_PetsAPI.Models.Pet)">
+            <summary>
+            Creates a pet and stores it in the database.
+            </summary>
+            <param name="newPet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.UpdatePetById(System.Int32,Project1_PetsAPI.Models.Pet)">
+            <summary>
+            Replaces all attibutes of a pet matching {id} with the specified {pet}. 
+            </summary>
+            <param name="id"></param>
+            <param name="newPet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.EditPetById(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Project1_PetsAPI.Models.Pet})">
+            <summary>
+            Edits specific attributes of a pet matching {id} using a JSONPatchDocument.
+            </summary>
+            <param name="id"></param>
+            <param name="newPet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project1_PetsAPI.Controllers.PetsController.DeletePetById(System.Int32)">
+            <summary>
+            Deletes a pet from the database matching {id}.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:PetsAPI.Migrations.InitialCreate">
             <inheritdoc />
         </member>

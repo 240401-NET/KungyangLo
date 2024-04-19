@@ -1,4 +1,7 @@
+using System.Diagnostics;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Project1_PetsAPI.Data;
 using Project1_PetsAPI.Services;
 
@@ -11,6 +14,7 @@ builder.Services.AddDbContext<PetsDBContext>(options =>
 
 builder.Services.AddScoped<IPetDAO, PetDAO>();
 builder.Services.AddScoped<IPetService, PetService>();
+builder.Services.AddHttpClient();
 
 builder.Services.AddControllers()
 .AddJsonOptions(options =>
@@ -21,7 +25,25 @@ builder.Services.AddControllers()
 builder.Services.AddControllers().AddNewtonsoftJson();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+    {
+        c.SwaggerDoc("v1", new OpenApiInfo
+        {
+            Title = "Pet Tracker API",
+            Description = "A simple API to track all of your pets!",
+            Contact = new OpenApiContact
+            {
+                Name = "Kung Lo",
+                Email = "fake@email.net"
+            },
+            Version = "v1"
+        });
+
+        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+        
+        c.IncludeXmlComments(xmlPath);
+    }).AddSwaggerGenNewtonsoftSupport();
 
 var app = builder.Build();
 
